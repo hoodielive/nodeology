@@ -1,0 +1,5 @@
+Helps to handle (auth reqs) between two (auth nodes)
+
+* shortcomings ->
+    1. Requires you to reach in and polish code to make things operate smoothly
+    2. Comprised of several libraries (passport and passport strategy) | middleware
