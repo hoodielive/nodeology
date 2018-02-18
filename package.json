@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Node Venture",
   "main": "app.js",
+  "engines": {
+      "node": "9.5.0",
+      "npm": "5.6.0"
+  },
   "scripts": {
-    "test": "echo \"hello, aeon\""
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
