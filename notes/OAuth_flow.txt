@@ -1,0 +1,2 @@
+Client                                  Server                                    Google
+User clicks Login               Forward User's request to Google                Ask user if they grant permission
