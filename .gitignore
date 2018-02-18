@@ -58,4 +58,4 @@ typings/
 .env
 
 # person keys
-keys
+keys.js
