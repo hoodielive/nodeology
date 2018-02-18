@@ -1,0 +1,27 @@
+{
+  "name": "nodeology",
+  "version": "1.0.0",
+  "description": "Node Venture",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"hello, aeon\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoodielive/nodeology.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "express"
+  ],
+  "author": "hoodielive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoodielive/nodeology/issues"
+  },
+  "homepage": "https://github.com/hoodielive/nodeology#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
