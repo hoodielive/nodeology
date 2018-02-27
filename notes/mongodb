@@ -12,3 +12,7 @@ User Collections are json/objects - (key value pairs)
 
 
 and it is ..schema(less) meaning all collections are different. They don't have the same properties which differs from SQL dbs which require everything be uniform (id, name, email, address, etc) 
+
+mongoose
+Mongodb -> collection -> records -> properties of those records/objects 
+Mongoose -> modelClass (represents an entire collection of mongodb) -> ModelInstance (represents single records inside of collection)
