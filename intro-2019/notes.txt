@@ -1,6 +1,5 @@
 What can I create with NodeJS?
-
-- Anything that you can with any scripting language like: Python, Ruby but you're doing it with Javascript
+Anything that you can with any scripting language like: Python, Ruby but you're doing it with Javascript
 
 Follow Node: 
 * Tooling (build, automation,e t c)
@@ -15,13 +14,80 @@ Follow Node:
 - nvm 
 
 # Browser vs Node
-
-Browser::
+Browser::dom
 - Build interactive apps for 'web'
 - DOM
 - Window
+- Fragmentation
+- optional modules (es6)
+- cannot access filesystem
+- Async
 
-Node::
+Node::node
 - Build 'server' side apps and scripts 
 - No GUI (can virtualize)
 - No window, but does have a global object (Doesn't mean you should attach shiii to it)
+- Versioned (no fragmentation)
+- Required modules (commonjs+)
+- Can access filesystem
+- Async
+- No browser based API(s)
+
+# Globals 
+- Don't create your own globals!!!!!!!!!!
+Nodejs provides helpful globals:
+
+process::information about env the program is executed/running in
+console.log(process)
+
+require::function to find and use modules in current module
+console.log(require)
+
+__dirname::the current file directory path
+* files :: __filename 
+console.log(dirname)
+
+module::information about the current module, methods or making module consumable 
+* exports 
+console.log(module)
+
+global::like window, its the "global object". Almost NEVER use this.. 
+
+# Modules
+&encapsulated code
+&explicit requests only 
+
+# 2 separate files
+let module1 = (function(exports, require, module, __filename, _dirname) {
+  // your nodejs code in a file
+})
+
+let module2 = (function(exports, require, module, __filename, _dirname) {
+  // your nodejs code in a file
+})
+
+Nodejs uses CommonJS for it module system but its moving to ES6 modules 
+ESM (ecmascript modules) *new standard
+AMD (pretty much dead)
+...there others but don't matter at all
+
+# Creating Modules 
+&its just regular code, just export it! 
+&you have code, know how do you share it or what do you want to share? 
+ALL OF YOUR NODEJS CODE are MODULES
+For Ex:
+  const add = (num, num2) => {}
+  const notPublic = () => {}
+  module.exports = {add, thing() {}, value:1} # this is what would be returned because thats what you exported
+  or
+  module.exports.more = {}
+You have to be EXPLICIT about what you EXPORT
+
+# Using Modules 
+tldr;require 
+The NodeJS runtime injects another global, require.
+
+This function takes a relative path to the module that you want to consume, and sychronously loads it by returning whatever the 
+target module exported
+
+
