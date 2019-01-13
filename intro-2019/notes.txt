@@ -14,3 +14,14 @@ Follow Node:
 # Best way to install 
 - nvm 
 
+# Browser vs Node
+
+Browser::
+- Build interactive apps for 'web'
+- DOM
+- Window
+
+Node::
+- Build 'server' side apps and scripts 
+- No GUI (can virtualize)
+- No window, but does have a global object (Doesn't mean you should attach shiii to it)
