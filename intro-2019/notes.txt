@@ -1,0 +1,16 @@
+What can I create with NodeJS?
+
+- Anything that you can with any scripting language like: Python, Ruby but you're doing it with Javascript
+
+Follow Node: 
+* Tooling (build, automation,e t c)
+* API(s)[Rest, Realtime, e t c]
+* CDNs 
+* Shareable libraries
+* Desktop Applications -> Electron, SW.js, E T C
+* IoT - johnny5
+* Pretty much anything because node is on everything now
+
+# Best way to install 
+- nvm 
+
