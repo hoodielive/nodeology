@@ -1,0 +1,29 @@
+# Internal Modules::modules that ship with Node 
+
+fs::fileSystem module to interact with files on machine 
+  const fs = require('fs')
+
+http::low level-ish module for creating network based programs, like API(s)
+
+path::useful for file traversal 
+  const path = require('path')
+  console.log(path.join('../../../jello/jiggaboo', 'app'/, 'crypto'/'../stuff'))
+
+url::
+crypto::
+
+# Remote Modules
+::-> download and use modules from the internets 
+
+# 3 module types 
+custom local modules (internal fs):
+  let lib = require('../rel/path/to/lib')
+
+Remote modules (npm):
+  let lib = require('lib')
+
+Shipped modules (internal):
+  let lib = require('lib')
+
+# NPM (to manage remote modules)
+  
